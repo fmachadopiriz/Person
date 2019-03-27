@@ -1,27 +1,8 @@
-// NO ENTREGAR ESTE CÓDIGO A LOS ALUMNOS SIN BORRAR LO QUE ESTÁ COMENTADO ENTRE /* Y */
 using System;
 using System.Linq;
 
 namespace Person
 {
-    /* BORRAR DESDE ACÁ */
-    public class Person
-    {
-        public Person(string name, string id)
-        {
-            this.Name = name;
-            this.ID = id;
-        }
-        public string Name { get; set; }
-        public string ID { get; set; }
-
-        public void IntroduceYourself()
-        {
-            Console.WriteLine($"Soy {this.Name} y mi cédula es {this.ID}");
-        }
-    }    
-    /* HASTA ACÁ */
-
     public class IdUtils
     {
         /// <summary>
@@ -83,14 +64,8 @@ namespace Person
             Person jane = new Person("Jane Doe", "8.765.432-7");
             john.IntroduceYourself();
             jane.IntroduceYourself();
-            /* BORRAR DESDE AQUÍ */
-            Console.WriteLine(IdUtils.IdIsValid(john.ID));
-            Console.WriteLine(IdUtils.IdIsValid(jane.ID));
             john.ID = "1.234.567-8"; // <- Esto no debería ser válido
             jane.ID = "8.765.432-1"; // <- Esto no debería ser válido
-            Console.WriteLine(IdUtils.IdIsValid(john.ID));
-            Console.WriteLine(IdUtils.IdIsValid(jane.ID));
-            /* HASTA AQUÍ */
         }
     }
 }
