@@ -6,7 +6,8 @@ namespace Person
     public class IdUtils
     {
         /// <summary>
-        /// Valida un número de cédula de identidad sin puntos ni guiones. Adaptado de https://es.wikipedia.org/wiki/C%C3%A9dula_de_Identidad_de_Uruguay#Match_on_Card
+        /// Valida un número de cédula de identidad; el número puede tener o no puntos y el guión pero debe tener el dígito verificador. Adaptado
+        /// de https://es.wikipedia.org/wiki/C%C3%A9dula_de_Identidad_de_Uruguay#Match_on_Card.
         /// </summary>
         /// <param name="id"></param>
         /// <returns>Retorna true si el número de cédula es válido y false en caso contrario.</returns>
